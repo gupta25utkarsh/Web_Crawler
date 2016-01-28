@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 processed = []
 
-def searchUrl(url = "http://www.google.co.in", depth = 2):
+def searchUrl(url = "http://www.fb.com", depth = 2):
 	content = urllib2.urlopen(url).read()
 	soup = BeautifulSoup(content)
 	if depth == 0 :
